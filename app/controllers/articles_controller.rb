@@ -38,6 +38,8 @@ class ArticlesController < ApplicationController
             render 'new'
         end
     end
+    # validates :title, presence: true, length: { minimum: 5 }
+    # validates :text, presence: true, length: { minimum: 5 }
 
     def update
         @article = Article.find(params[:id])
